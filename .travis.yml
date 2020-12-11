@@ -9,3 +9,11 @@ script:
 - npm install
 - echo 'Testing'
 - npm test
+deploy:
+  provider: heroku
+  api_key:
+    secure: ix9mua1VynlNvCFyGnFLlSZQKsokdExW0KxA/c7MA/cfbTfD7+z9iGwKCCA6R9eVscRNfweskHWjfdYFXRtpxpf4te/1fq0xK48X7rdoxmhc5+8zHbZDHIedWTu9J7yTjZOXRNf8sl9udAxAPE8IbPhb/kzUNjtkMzQ6f8AHJnI/MjkUa6ygzCWYd/WquY5Wdm5ZYPL0T8nUFLXp+10VP/D/WXASaQs06dNgdeOPfoZl87ZlIuLUsdwibLKxElwleIkwThT/R/5LSDnJKDzkDjI7wuhVm8neZtgISRJDCcVgtiO37UVOsMHl9evtqc6BFzzs5QOUO++TIFiXB43kkO0lWwelZMCuEQpXi9POPpbKiuC4AMfRSqTjyaBbk2B2ZTpTl+JmRL63uhR4HPuwrwmS13AeFfgozDnU+s+0xAL5+s0VJnz5R8LYy/POxpTQoDZvq3+YR697XW90nRkRjnxZRnwXByNnnkGjYZjt2BGmM1LmfgDYJ7IoYfnpBEorFo1N/ypswuE7XJDezzrUILSQPOMQZi+9c0pt6n7HlA269Ims0GSdlgnkA7LociOV2DHM63jexm+2XWOTjt7AIp0JsSXyEj0f7UKee7Q4OPWw4+ZydW/O1KUrGcB5EYMWm8IZGtM7KcIkCZ5KP+Q2XsgMyjWetJwE/tW1vCbGNbE=
+  app: DevOpsLAB
+  on:
+    repo: WeepiZz/DevOpsLAB
+  skip_cleanup: 'true'
